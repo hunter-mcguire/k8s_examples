@@ -30,6 +30,6 @@ new_cluster = connector.register_cluster(
 
 # Create overrides.yaml for helm deployment
 if new_cluster:
-    with open('overrides.yaml') as file:
+    with open('overrides.yaml', 'w') as file:
         file.write(new_cluster)
 ```
